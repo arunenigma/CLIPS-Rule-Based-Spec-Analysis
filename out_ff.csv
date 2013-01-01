@@ -1,0 +1,649 @@
+feature,type,attribute,dic
+"read acknowledge",bool,"no",mem_ctlr
+"write acknowledge",bool,"no",mem_ctlr
+"llrx",bool,"no",mem_ctlr
+"lltx",bool,"no",mem_ctlr
+"wr en",bool,"no",mem_ctlr
+"rd en",bool,"no",mem_ctlr
+"data be",bool,"no",mem_ctlr
+"fsm",bool,"no",mem_ctlr
+"message block",bool,"no",crypto_jh
+"spn",bool,"no",crypto_jh
+"de grouping",bool,"no",crypto_jh
+"grouping",bool,"no",crypto_jh
+"d dimensional array",bool,"no",crypto_jh
+"permutation layer",bool,"no",crypto_jh
+"linear transformation layer",bool,"no",crypto_jh
+"sbox layer",bool,"no",crypto_jh
+"pd_",bool,"no",crypto_jh
+"_d",bool,"no",crypto_jh
+"pd",bool,"no",crypto_jh
+"mds",bool,"no",crypto_jh
+"compression function",bool,"no",crypto_jh
+"bijective function",bool,"no",crypto_jh
+"rounding function",bool,"no",crypto_jh
+"permutation",bool,"no",crypto_jh
+"linear transformation",bool,"no",crypto_jh
+"serpent",bool,"no",crypto_jh
+"bit slice",bool,"no",crypto_jh
+"aes",bool,"no",crypto_jh
+"sboxes",bool,"no",crypto_jh
+"jh 512",bool,"no",crypto_jh
+"jh 384",bool,"no",crypto_jh
+"jh 256",bool,"no",crypto_jh
+"jh 224",bool,"no",crypto_jh
+"finalization",bool,"no",crypto_blake
+"compression rounds",bool,"no",crypto_blake
+"round function",bool,"no",crypto_blake
+"initilization",bool,"no",crypto_blake
+"new chain",bool,"no",crypto_blake
+"salt",bool,"no",crypto_blake
+"chain",bool,"no",crypto_blake
+"c15",bool,"no",crypto_blake
+"c14",bool,"no",crypto_blake
+"c13",bool,"no",crypto_blake
+"c12",bool,"no",crypto_blake
+"c10",bool,"no",crypto_blake
+"c9",bool,"no",crypto_blake
+"c8",bool,"no",crypto_blake
+"c7",bool,"no",crypto_blake
+"c6",bool,"no",crypto_blake
+"iv7",bool,"no",crypto_blake
+"iv6",bool,"no",crypto_blake
+"iv5",bool,"no",crypto_blake
+"iv4",bool,"no",crypto_blake
+"iv3",bool,"no",crypto_blake
+"iv2",bool,"no",crypto_blake
+"iv1",bool,"no",crypto_blake
+"iv0",bool,"no",crypto_blake
+"counter value",bool,"no",crypto_blake
+"salt value",bool,"no",crypto_blake
+"message blocks",bool,"no",crypto_blake
+"chain value",bool,"no",crypto_blake
+"blake 384",bool,"no",crypto_blake
+"blake 224",bool,"no",crypto_blake
+"blake 512",bool,"no",crypto_blake
+"blake 256",bool,"no",crypto_blake
+"chacha",bool,"no",crypto_blake
+"haifa",bool,"no",crypto_blake
+"interrupt clear",bool,"no",intr_ctlr
+"interrupt set",bool,"no",intr_ctlr
+"masked interrupt",bool,"no",intr_ctlr
+"raw interrupt",bool,"no",intr_ctlr
+"interrupt acknowledge",bool,"no",intr_ctlr
+"vectored",bool,"no",intr_ctlr
+"polling",bool,"no",intr_ctlr
+"nesting",bool,"no",intr_ctlr
+"idim flag",bool,"no",zpu
+"zpu interrupt acknowledge",bool,"no",zpu
+"interrupt vector address",bool,"no",zpu
+"memory mapped i/o",bool,"no",zpu
+"neg",bool,"no",zpu
+"neq",bool,"no",zpu
+"eq",bool,"no",zpu
+"callpcrel",bool,"no",zpu
+"ashiftright",bool,"no",zpu
+"ashiftleft",bool,"no",zpu
+"lshiftright",bool,"no",zpu
+"div",bool,"no",zpu
+"mult",bool,"no",zpu
+"neqbranch",bool,"no",zpu
+"eqbranch",bool,"no",zpu
+"ulessthanprequal",bool,"no",zpu
+"ulessthan",bool,"no",zpu
+"lessthanequal",bool,"no",zpu
+"lessthan",bool,"no",zpu
+"storeh",bool,"no",zpu
+"loadh",bool,"no",zpu
+"storeb",bool,"no",zpu
+"loadb",bool,"no",zpu
+"xor",bool,"no",zpu
+"poppcrel",bool,"no",zpu
+"pushspadd",bool,"no",zpu
+"nop",bool,"no",zpu
+"flip",bool,"no",zpu
+"popsp",bool,"no",zpu
+"pushsp",bool,"no",zpu
+"poppc",bool,"no",zpu
+"pushpc",bool,"no",zpu
+"addsp",bool,"no",zpu
+"loadsp",bool,"no",zpu
+"storesp",bool,"no",zpu
+"breakpoint",bool,"no",zpu
+"single port memory interface",bool,"no",zpu
+"microcode",bool,"no",zpu
+"zpu instruction",bool,"no",zpu
+"zero operand",bool,"no",zpu
+"memory transaction latency",bool,"no",zpu
+"tuser",bool,"no",axi
+"tid",bool,"no",axi
+"tkeep",bool,"no",axi
+"tstrb",bool,"no",axi
+"tdata",bool,"no",axi
+"resetn",bool,"no",axi
+"tuser trim",bool,"no",axi
+"tuser zero padding",bool,"no",axi
+"null byte",bool,"no",axi
+"multiple data streams",bool,"no",axi
+"shares wires",bool,"no",axi
+"side band signaling",bool,"no",axi
+"parity",bool,"no",axi
+"defined packet length",bool,"no",axi
+"transfer merging",bool,"no",axi
+"transfer interleaving",bool,"no",axi
+"packet boundary",bool,"no",axi
+"ordered transfers",bool,"no",axi
+"interleaving",bool,"no",axi
+"data stream",bool,"no",axi
+"frame",bool,"no",axi
+"position byte",bool,"no",axi
+"same data width",bool,"no",axi
+"uni directional",bool,"no",axi
+"direct connection",bool,"no",axi
+"data bits",bool,"no",timer
+"hardware triggered strobe",bool,"no",timer
+"software triggered strobe",bool,"no",timer
+"square wave mode",bool,"no",timer
+"hardware retriggerable one shot",bool,"no",timer
+"pulse width comparison",bool,"no",timer
+"frequency comparison",bool,"no",timer
+"single shot",bool,"no",timer
+"24 hour clock",bool,"no",timer
+"alarm",bool,"no",timer
+"input/output voltage",bool,"no",timer
+"ttl compliant",bool,"no",timer
+"plcc pid count",bool,"no",timer
+"plcc package",bool,"no",timer
+"cerdip pin count",bool,"no",timer
+"cerdip package",bool,"no",timer
+"counter latch command",bool,"no",timer
+"read back command",bool,"no",timer
+"count down",bool,"no",timer
+"count up",bool,"no",timer
+"bcd counting",bool,"no",timer
+"binary counting",bool,"no",timer
+"amba apb interface",bool,"no",timer
+"plb interface",bool,"no",timer
+"32bit counters",bool,"no",timer
+"16bit counters",bool,"no",timer
+"prescaler division",bool,"no",uart
+"divisor latch",bool,"no",uart
+"scratch",bool,"no",uart
+"modem status",bool,"no",uart
+"line status",bool,"no",uart
+"modem control",bool,"no",uart
+"line control",bool,"no",uart
+"fifo control",bool,"no",uart
+"interrupt identification",bool,"no",uart
+"transmitter holding",bool,"no",uart
+"receiver holding",bool,"no",uart
+"frame",bool,"no",uart
+"overrun",bool,"no",uart
+"pre scaler division",bool,"no",uart
+"clear to send",bool,"no",uart
+"bus width",bool,"no",uart
+"reject",bool,"no",uart
+"buffer size",bool,"no",uart
+"resynchronize",bool,"no",uart
+"cycles per bit",bool,"no",uart
+"samples per bit",bool,"no",uart
+"buffering",bool,"no",uart
+"data bits",bool,"no",uart
+"serialization",bool,"no",uart
+"bi sync",bool,"no",uart
+"receive buffer",bool,"no",uart
+"transmit buffer",bool,"no",uart
+"fifo size",bool,"no",uart
+"dma interface",bool,"no",uart
+"carrier detect",bool,"no",uart
+"output register",bool,"no",uart
+"input register",bool,"no",uart
+"signal inversion",bool,"no",uart
+"duplex",bool,"no",uart
+"simplex",bool,"no",uart
+"line break",bool,"no",uart
+"handshaking",bool,"no",uart
+"transfer rate maximum",bool,"no",uart
+"transfer rate minimum",bool,"no",uart
+"parity",bool,"no",uart
+"compliance",bool,"no",uart
+"zero detect",bool,"no",arm
+"full adder",bool,"no",arm
+"zero extend",bool,"no",arm
+"xor",bool,"no",arm
+"fiq register set",bool,"no",arm
+"irq register set",bool,"no",arm
+"user register set",bool,"no",arm
+"supervisor register set",bool,"no",arm
+"next fetch address generation",bool,"no",arm
+"barallel shifter",bool,"no",arm
+"multi cycle instructions",bool,"no",arm
+"decode state machine",bool,"no",arm
+"instruction decode",bool,"no",arm
+"each cache way kb",bool,"no",arm
+"cache line words",bool,"no",arm
+"cache lines",bool,"no",arm
+"8 way cache",bool,"no",arm
+"4 way cache",bool,"no",arm
+"3 way cache",bool,"no",arm
+"2 way cache",bool,"no",arm
+"write through policy",bool,"no",arm
+"cache data sram",bool,"no",arm
+"cache tag sram",bool,"no",arm
+"cache state machine",bool,"no",arm
+"le",bool,"no",arm
+"gt",bool,"no",arm
+"lt",bool,"no",arm
+"ge",bool,"no",arm
+"ls",bool,"no",arm
+"hi",bool,"no",arm
+"pl",bool,"no",arm
+"mi",bool,"no",arm
+"cc",bool,"no",arm
+"eq",bool,"no",arm
+"swpb",bool,"no",arm
+"swp",bool,"no",arm
+"b",bool,"no",arm
+"long multiply",bool,"no",arm
+"spsr",bool,"no",arm
+"cpsr",bool,"no",arm
+"program status word",bool,"no",arm
+"pipeline stall",bool,"no",arm
+"pipeline stages",bool,"no",arm
+"endianess",bool,"no",arm
+"coprocessor 15 interface",bool,"no",arm
+"system bus width",bool,"no",arm
+"32 bit core",bool,"no",arm
+"unified instruction data cache",bool,"no",arm
+"instruction cache",bool,"no",arm
+"read miss replacement policy",bool,"yes",arm
+"point to point connection",bool,"yes",axi
+"local data memory",bool,"yes",zpu
+"remote data memory",bool,"yes",zpu
+"axi4 stream protocol",bool,"yes",axi
+"baud rate generator",bool,"yes",uart
+"flow control",bool,"yes",axi
+"flow control",bool,"yes",uart
+"risc processor",bool,"yes",zpu
+"risc processor",bool,"yes",arm
+"data cache",bool,"yes",zpu
+"data cache",bool,"yes",arm
+"v2a isa",bool,"yes",arm
+"burst transfers",bool,"yes",axi
+"interrupt controller",bool,"yes",uart
+"interrupt status",bool,"yes",uart
+"soft interrupt",bool,"yes",intr_ctlr
+"axi bridge",bool,"yes",axi
+"back pressure",bool,"yes",axi
+"medium sized",bool,"yes",zpu
+"sha 3",bool,"yes",crypto_jh
+"sha 3",bool,"yes",crypto_blake
+"data memories",bool,"yes",zpu
+"full crossbar",bool,"yes",axi
+"buffer requests",bool,"yes",axi
+"level triggered",bool,"yes",intr_ctlr
+"edge triggered",bool,"yes",intr_ctlr
+"edge triggered",bool,"yes",zpu
+"rate generator",bool,"yes",timer
+"serial interface",bool,"yes",uart
+"bi direction",bool,"yes",timer
+"data byte",bool,"yes",axi
+"start bit",bool,"yes",uart
+"interrupt mask",bool,"yes",zpu
+"control register",bool,"yes",uart
+"state machine",bool,"yes",zpu
+"27 registers",bool,"yes",arm
+"single transfer",bool,"yes",axi
+"interrupt handling",bool,"yes",arm
+"status register",bool,"yes",uart
+"memory access",bool,"yes",arm
+"shift register",bool,"yes",uart
+"interrupt enable",bool,"yes",intr_ctlr
+"interrupt enable",bool,"yes",uart
+"program counter",bool,"yes",arm
+"register instruction",bool,"yes",arm
+"instruction prefetch",bool,"yes",arm
+"prefetch abort",bool,"yes",arm
+"software interrupt",bool,"yes",arm
+"write back",bool,"yes",arm
+"address exception",bool,"yes",arm
+"data transfer",bool,"yes",axi
+"data abort",bool,"yes",arm
+"register bank",bool,"yes",arm
+"user mode",bool,"yes",arm
+"supervisor mode",bool,"yes",arm
+"mmu",bool,"yes",arm
+"fetch",bool,"yes",arm
+"decode",bool,"yes",arm
+"execute",bool,"yes",arm
+"exception",bool,"yes",arm
+"adc",bool,"yes",arm
+"add",bool,"yes",arm
+"bic",bool,"yes",arm
+"bl",bool,"yes",arm
+"cdp",bool,"yes",arm
+"cmn",bool,"yes",arm
+"cmp",bool,"yes",arm
+"eor",bool,"yes",arm
+"ldc",bool,"yes",arm
+"ldm",bool,"yes",arm
+"ldr",bool,"yes",arm
+"ldrb",bool,"yes",arm
+"mcr",bool,"yes",arm
+"mla",bool,"yes",arm
+"mov",bool,"yes",arm
+"mrc",bool,"yes",arm
+"mul",bool,"yes",arm
+"mvn",bool,"yes",arm
+"orr",bool,"yes",arm
+"rsb",bool,"yes",arm
+"rsc",bool,"yes",arm
+"sbc",bool,"yes",arm
+"stc",bool,"yes",arm
+"stm",bool,"yes",arm
+"str",bool,"yes",arm
+"strb",bool,"yes",arm
+"sub",bool,"yes",arm
+"swi",bool,"yes",arm
+"teq",bool,"yes",arm
+"tst",bool,"yes",arm
+"ne",bool,"yes",arm
+"cs",bool,"yes",arm
+"vs",bool,"yes",arm
+"vc",bool,"yes",arm
+"al",bool,"yes",arm
+"lsl",bool,"yes",arm
+"lsr",bool,"yes",arm
+"asr",bool,"yes",arm
+"ror",bool,"yes",arm
+"rrx",bool,"yes",arm
+"user",bool,"yes",arm
+"supervisor",bool,"yes",arm
+"abort",bool,"yes",arm
+"undefined",bool,"yes",arm
+"system",bool,"yes",arm
+"irq",bool,"yes",arm
+"fiq",bool,"yes",arm
+"multiply",bool,"yes",arm
+"alu",bool,"yes",arm
+"and",bool,"yes",arm
+"or",bool,"yes",arm
+"character",bool,"yes",uart
+"programmable",bool,"yes",uart
+"transmitter",bool,"yes",uart
+"receiver",bool,"yes",uart
+"reset",bool,"yes",uart
+"interrupt",bool,"yes",uart
+"fifo",bool,"yes",uart
+"overflow",bool,"yes",uart
+"ready",bool,"yes",uart
+"implemented",bool,"yes",uart
+"enable",bool,"yes",uart
+"break",bool,"yes",uart
+"status",bool,"yes",uart
+"continuous",bool,"yes",timer
+"interconnect",bool,"yes",axi
+"signaling",bool,"yes",axi
+"slave",bool,"yes",axi
+"master",bool,"yes",axi
+"packet",bool,"yes",axi
+"upsizing",bool,"yes",axi
+"downsizing",bool,"yes",axi
+"broadcast",bool,"yes",axi
+"clk",bool,"yes",axi
+"tvalid",bool,"yes",axi
+"tready",bool,"yes",axi
+"tlast",bool,"yes",axi
+"tdest",bool,"yes",axi
+"interrupt",bool,"yes",zpu
+"fetch",bool,"yes",zpu
+"decode",bool,"yes",zpu
+"execute",bool,"yes",zpu
+"pc",bool,"yes",zpu
+"emulate",bool,"yes",zpu
+"load",bool,"yes",zpu
+"store",bool,"yes",zpu
+"add",bool,"yes",zpu
+"and",bool,"yes",zpu
+"or",bool,"yes",zpu
+"not",bool,"yes",zpu
+"sub",bool,"yes",zpu
+"mod",bool,"yes",zpu
+"call",bool,"yes",zpu
+"programmable",bool,"yes",intr_ctlr
+"fiq",bool,"yes",intr_ctlr
+"irq",bool,"yes",intr_ctlr
+"lake",bool,"yes",crypto_blake
+"message",bool,"yes",crypto_blake
+"counter",bool,"yes",crypto_blake
+"length",set,"axi",mem_ctlr
+"length",set,"software",mem_ctlr
+"length",set,"32",mem_ctlr
+"source",set,"axi",mem_ctlr
+"destination",set,"link",mem_ctlr
+"ack",set,"even",mem_ctlr
+"output",set,"rising",crypto_jh
+"output",set,"link",crypto_jh
+"input",set,"rising",crypto_jh
+"input",set,"32",crypto_jh
+"input",set,"falling",crypto_jh
+"input",set,"start",crypto_jh
+"number",set,"32",crypto_jh
+"bit",set,"32",crypto_jh
+"bit",set,"start",crypto_jh
+"bit",set,"fixed",crypto_jh
+"bit",set,"link",crypto_jh
+"bit",set,"single",crypto_jh
+"bit",set,"26",crypto_jh
+"bit",set,"64",crypto_jh
+"bit",set,"hardware",crypto_jh
+"counter",set,"link",crypto_blake
+"word",set,"hardware",crypto_blake
+"word",set,"software",crypto_blake
+"word",set,"64",crypto_blake
+"irq",set,"link",intr_ctlr
+"irq",set,"software",intr_ctlr
+"fiq",set,"32",intr_ctlr
+"fiq",set,"software",intr_ctlr
+"priority",set,"fixed",intr_ctlr
+"priority",set,"software",intr_ctlr
+"mod",set,"odd",zpu
+"sub",set,"link",zpu
+"not",set,"software",zpu
+"not",set,"hardware",zpu
+"not",set,"even",zpu
+"not",set,"26",zpu
+"not",set,"link",zpu
+"or",set,"software",zpu
+"or",set,"single",zpu
+"or",set,"start",zpu
+"or",set,"axi",zpu
+"or",set,"hardware",zpu
+"or",set,"link",zpu
+"or",set,"32",zpu
+"or",set,"even",zpu
+"or",set,"26",zpu
+"and",set,"software",zpu
+"and",set,"hardware",zpu
+"and",set,"axi",zpu
+"and",set,"32",zpu
+"and",set,"local",zpu
+"and",set,"even",zpu
+"and",set,"single",zpu
+"and",set,"start",zpu
+"and",set,"fixed",zpu
+"and",set,"link",zpu
+"and",set,"26",zpu
+"and",set,"rising",zpu
+"add",set,"32",zpu
+"store",set,"single",zpu
+"store",set,"little",zpu
+"load",set,"single",zpu
+"load",set,"software",zpu
+"load",set,"even",zpu
+"emulate",set,"software",zpu
+"pc",set,"link",zpu
+"pc",set,"fixed",zpu
+"pc",set,"software",zpu
+"execute",set,"single",zpu
+"fetch",set,"link",zpu
+"interrupt",set,"hardware",zpu
+"interrupt",set,"32",zpu
+"interrupt",set,"software",zpu
+"interrupt",set,"link",zpu
+"interrupt",set,"fixed",zpu
+"interrupt",set,"single",zpu
+"packet",set,"32",axi
+"packet",set,"axi",axi
+"packet",set,"start",axi
+"slave",set,"axi",axi
+"interconnect",set,"hardware",axi
+"clock",set,"rising",timer
+"clock",set,"synchronous",timer
+"clock",set,"start",timer
+"clock",set,"software",timer
+"modes",set,"local",timer
+"modes",set,"link",timer
+"modes",set,"26",timer
+"implemented",set,"local",uart
+"ready",set,"start",uart
+"fifo",set,"axi",uart
+"interrupt",set,"hardware",uart
+"interrupt",set,"32",uart
+"interrupt",set,"software",uart
+"interrupt",set,"link",uart
+"interrupt",set,"fixed",uart
+"interrupt",set,"single",uart
+"reset",set,"software",uart
+"character",set,"start",uart
+"character",set,"fixed",uart
+"or",set,"software",arm
+"or",set,"single",arm
+"or",set,"start",arm
+"or",set,"axi",arm
+"or",set,"hardware",arm
+"or",set,"link",arm
+"or",set,"32",arm
+"or",set,"even",arm
+"or",set,"26",arm
+"and",set,"software",arm
+"and",set,"hardware",arm
+"and",set,"axi",arm
+"and",set,"32",arm
+"and",set,"local",arm
+"and",set,"even",arm
+"and",set,"single",arm
+"and",set,"start",arm
+"and",set,"fixed",arm
+"and",set,"link",arm
+"and",set,"26",arm
+"and",set,"rising",arm
+"algorithm",set,"hardware",arm
+"multiply",set,"32",arm
+"multiply",set,"software",arm
+"multiply",set,"single",arm
+"multiply",set,"hardware",arm
+"fiq",set,"32",arm
+"fiq",set,"software",arm
+"irq",set,"link",arm
+"irq",set,"software",arm
+"system",set,"software",arm
+"system",set,"local",arm
+"system",set,"hardware",arm
+"system",set,"fixed",arm
+"system",set,"32",arm
+"undefined",set,"software",arm
+"undefined",set,"single",arm
+"abort",set,"software",arm
+"abort",set,"little",arm
+"abort",set,"even",arm
+"supervisor",set,"single",arm
+"supervisor",set,"link",arm
+"supervisor",set,"software",arm
+"user",set,"single",arm
+"user",set,"26",arm
+"user",set,"hardware",arm
+"ror",set,"32",arm
+"asr",set,"32",arm
+"lsr",set,"32",arm
+"lsl",set,"32",arm
+"al",set,"64",arm
+"al",set,"32",arm
+"swi",set,"software",arm
+"sub",set,"link",arm
+"str",set,"single",arm
+"stm",set,"start",arm
+"sbc",set,"32",arm
+"rsc",set,"32",arm
+"rsb",set,"32",arm
+"mul",set,"64",arm
+"mrc",set,"32",arm
+"mov",set,"link",arm
+"mov",set,"64",arm
+"mov",set,"even",arm
+"mla",set,"32",arm
+"mcr",set,"32",arm
+"ldr",set,"single",arm
+"ldm",set,"link",arm
+"ldm",set,"even",arm
+"cmp",set,"32",arm
+"cmn",set,"32",arm
+"bl",set,"start",arm
+"bl",set,"fixed",arm
+"bl",set,"link",arm
+"add",set,"32",arm
+"adc",set,"32",arm
+"exception",set,"software",arm
+"exception",set,"26",arm
+"execute",set,"single",arm
+"fetch",set,"link",arm
+"register bank",set,"single",arm
+"data abort",set,"even",arm
+"data transfer",set,"single",axi
+"user mode",set,"single",arm
+"software interrupt",set,"software",arm
+"prefetch abort",set,"software",arm
+"data abort",set,"software",arm
+"data transfer",set,"software",axi
+"instruction prefetch",set,"single",arm
+"software interrupt",set,"single",arm
+"address space",set,"26",arm
+"software interrupt",set,"fixed",arm
+"supervisor mode",set,"software",arm
+"data abort",set,"little",arm
+"address exception",set,"26",arm
+"data transfer",set,"hardware",axi
+"user mode",set,"hardware",arm
+"user mode",set,"26",arm
+"undefined instruction",set,"software",arm
+"address exception",set,"software",arm
+"single transfer",set,"single",axi
+"data in",set,"32",mem_ctlr
+"27 registers",set,"32",arm
+"clock cycles",set,"start",arm
+"state machine",set,"start",zpu
+"start bit",set,"start",uart
+"start bit",set,"fixed",uart
+"stop bits",set,"start",uart
+"stop bits",set,"fixed",uart
+"data memories",set,"hardware",zpu
+"back pressure",set,"axi",axi
+"axi bridge",set,"axi",axi
+"passthrough mode",set,"even",mem_ctlr
+"normal mode",set,"axi",mem_ctlr
+"base address",set,"start",mem_ctlr
+"passthrough mode",set,"axi",mem_ctlr
+"local data memory",set,"local",zpu
+"remote data memory",set,"local",zpu
+"rate",number,"600",uart
+"input",number,"1",crypto_jh
+"rate",number,"500kHz",uart
+"rate",number,"31250Hz",uart
+"output",number,"2",crypto_jh
+"output",number,"1",crypto_jh
+"input",number,"0",crypto_jh
+"output",number,"3",crypto_jh
+"word",number,"1",crypto_blake
+"word",number,"0",crypto_blake
+"word",number,"4",crypto_blake
+"number",number,"VL86C110",crypto_jh
